@@ -1,0 +1,15 @@
+#TESTE EDU SRE
+#
+kind: Deployment
+
+metadata:
+        name: deploy-teste-sre-eduardo
+
+spec:
+        replicas: 3
+ selector: matchLabels:
+         app: python:3.8
+
+         spec:
+                 containers:
+                         - name: sre_teste_eduardo         
